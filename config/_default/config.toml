@@ -1,5 +1,5 @@
 
-baseURL = "https://bryskiewicz.com"
+baseURL = "/"
 enableRobotsTXT = true
 
 languageCode = "en"
@@ -13,9 +13,6 @@ outputs.home = ["HTML", "RSS", "JSON"]
         [markup.goldmark.renderer]
             unsafe = true  # yolo
 
-
-
 [services]
     [services.disqus]
         shortname = 'your-disqus-shortname'
-

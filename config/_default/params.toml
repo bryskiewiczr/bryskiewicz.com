@@ -16,7 +16,7 @@ footer.showThemeAttribution = true
 footer.showAppearanceSwitcher = true
 
 # homepage
-homepage.layout = "page"
+homepage.layout = "home"
 homepage.recentLimit = 3
 homepage.showRecent = true
 
@@ -28,6 +28,8 @@ article.sharingLinks = ["linkedin", "threads", "telegram", "reddit"]
 #article.showComments = true
 
 # list
+list.groupByYear = true
+list.showSummary = true
 
 # other
 enableSearch = true
