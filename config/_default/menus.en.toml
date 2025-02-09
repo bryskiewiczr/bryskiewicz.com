@@ -1,11 +1,26 @@
 [[main]]
+name = "Home"
+pageRef = "/"
+weight = 1
+
+[[main]]
+name = "About"
+pageRef = "about"
+weight = 2
+
+[[main]]
 name = "Blog"
 pageRef = "posts"
 weight = 10
 
 [[main]]
-name = "Topics"
-pageRef = "topics"
+name = "Categories"
+pageRef = "categories"
+weight = 19
+
+[[main]]
+name = "Tags"
+pageRef = "tags"
 weight = 20
 
 [[main]]
@@ -17,13 +32,12 @@ icon = "github"
 showName = false
 target = "_blank"
 
-# no search bar for now
-#[[main]]
-#identifier = "search"
-#weight = 99
-#[main.params]
-#action = "search"
-#icon = "search"
+[[main]]
+identifier = "search"
+weight = 99
+[main.params]
+action = "search"
+icon = "search"
 
 [[footer]]
 name = "Privacy"

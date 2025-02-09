@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article class="prose max-w-full dark:prose-invert">
+    {{ with .Title }}
+    <header>
+        <h1>{{ . | emojify }}</h1>
+    </header>
+    {{ end }}
+    <section>{{ .Content | emojify }}</section>
+</article>
+{{ end }}

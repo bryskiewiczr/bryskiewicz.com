@@ -1,3 +1,21 @@
+
 baseURL = "https://bryskiewicz.com"
+enableRobotsTXT = true
+
 languageCode = "en"
+
 title = "bryskiewicz.com :: data engineer :: cat lover"
+
+outputs.home = ["HTML", "RSS", "JSON"]
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true  # yolo
+
+
+
+[services]
+    [services.disqus]
+        shortname = 'your-disqus-shortname'
+

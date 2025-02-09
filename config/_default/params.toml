@@ -1,1 +1,33 @@
-colorScheme = "cherry"
+# https://jpanther.github.io/congo/docs/configuration/
+
+# appearance
+colorScheme = "fire"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+enableCodeCopy = true
+
+# header
+header.layout = "hybrid"
+header.showTitle = true
+
+# footer
+footer.showCopyright = true
+footer.showThemeAttribution = true
+footer.showAppearanceSwitcher = true
+
+# homepage
+homepage.layout = "page"
+homepage.recentLimit = 3
+homepage.showRecent = true
+
+# article
+article.showPagination = true
+article.showTaxonomies = true
+article.showTableOfContents = true
+article.sharingLinks = ["linkedin", "threads", "telegram", "reddit"]
+#article.showComments = true
+
+# list
+
+# other
+enableSearch = true
