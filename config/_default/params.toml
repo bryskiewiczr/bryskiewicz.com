@@ -1,7 +1,7 @@
 # https://jpanther.github.io/congo/docs/configuration/
 
 # appearance
-colorScheme = "fire"
+colorScheme = "sage"
 defaultAppearance = "light"
 autoSwitchAppearance = true
 enableCodeCopy = true
@@ -30,6 +30,7 @@ article.sharingLinks = ["linkedin", "threads", "telegram", "reddit"]
 # list
 list.groupByYear = true
 list.showSummary = true
+list.showTaxonomies = true
 
 # other
 enableSearch = true

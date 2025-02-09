@@ -14,9 +14,9 @@ pageRef = "posts"
 weight = 10
 
 [[main]]
-name = "Categories"
-pageRef = "categories"
-weight = 19
+name = "Off-topic"
+pageRef = "off-topics"
+weight = 11
 
 [[main]]
 name = "Tags"

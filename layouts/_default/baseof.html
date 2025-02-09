@@ -9,9 +9,39 @@ data-default-appearance="{{- .Site.Params.defaultAppearance | default "light" -}
 data-auto-appearance="{{- .Site.Params.autoSwitchAppearance | default "true" -}}"
 >
 {{- partial "head.html" . -}}
+<head>
+    <!-- Other existing tags like meta, title, etc. -->
+    <style>
+        /* Ensure particles container covers the full screen */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            background: #1e293b;  /* Background color for the body */
+        }
+
+        #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;  /* Make sure it stays in the background */
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;  /* Content will be on top of the particles */
+            color: white;  /* Text color */
+        }
+    </style>
+</head>
 <body
         class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
 >
+<div id="particles-js"></div>
 <div id="the-top" class="absolute flex self-center">
     <a
             class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
@@ -52,4 +82,86 @@ data-auto-appearance="{{- .Site.Params.autoSwitchAppearance | default "true" -}}
     {{ end }}
 </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.37.1/tsparticles.min.js"></script>
+<script>
+    tsParticles.load("particles-js", {
+        particles: {
+            number: {
+                value: 60,
+                density: {
+                    enable: true,
+                    value_area: 700
+                }
+            },
+            color: {
+                value: "#577A67"  /* Color for particles */
+            },
+            shape: {
+                type: "circle",  /* Shape of particles */
+                stroke: {
+                    width: 0,
+                    color: "#577A67"
+                }
+            },
+            opacity: {
+                value: 0.2,
+                random: true,
+                anim: {
+                    enable: true,
+                    speed: 1,
+                    opacity_min: 0.1,
+                    sync: false
+                }
+            },
+            size: {
+                value: 2,
+                random: true,
+                anim: {
+                    enable: false,
+                    speed: 40,
+                    size_min: 0.5,
+                    sync: false
+                }
+            },
+            line_linked: {
+                enable: true,
+                distance: 250,
+                color: "#577A67",  /* Line color */
+                opacity: 0.1,
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 1,
+                direction: "none",
+                random: true,
+                straight: false,
+                out_mode: "out",
+                bounce: false
+            }
+        },
+        interactivity: {
+            detect_on: "window",
+            events: {
+                onhover: {
+                    enable: true,
+                    mode: "grab"
+                },
+                onclick: {
+                    enable: true,
+                    mode: "push"
+                }
+            },
+            modes: {
+                grab: {
+                    distance: 150
+                },
+                push: {
+                    particles_nb: 1
+                }
+            }
+        },
+        retina_detect: true
+    });
+</script>
 </html>

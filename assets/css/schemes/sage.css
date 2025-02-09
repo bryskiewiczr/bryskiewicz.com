@@ -1,0 +1,43 @@
+/* Muted Green (Rosemary/Sage) Scheme */
+:root {
+  --color-neutral: 255, 255, 255;
+
+  /* Gray */
+  --color-neutral-50: 250, 250, 250;
+  --color-neutral-100: 244, 244, 245;
+  --color-neutral-200: 228, 228, 231;
+  --color-neutral-300: 212, 212, 216;
+  --color-neutral-400: 161, 161, 170;
+  --color-neutral-500: 113, 113, 122;
+  --color-neutral-600: 82, 82, 91;
+  --color-neutral-700: 63, 63, 70;
+  --color-neutral-800: 39, 39, 42;
+  --color-neutral-900: 24, 24, 27;
+  --color-neutral-950: 3, 7, 18;
+
+  /* Muted Green (Sage/Rosemary) */
+  --color-primary-50: 241, 248, 243;   /* Very pale sage */
+  --color-primary-100: 220, 238, 224;  /* Soft muted green */
+  --color-primary-200: 194, 226, 202;  /* Light sage */
+  --color-primary-300: 163, 201, 176;  /* Muted green */
+  --color-primary-400: 134, 175, 151;  /* Sage green */
+  --color-primary-500: 107, 147, 125;  /* Subdued forest green */
+  --color-primary-600: 87, 122, 103;   /* Deep muted green */
+  --color-primary-700: 70, 100, 82;    /* Dark herbal green */
+  --color-primary-800: 54, 77, 62;     /* Very dark sage */
+  --color-primary-900: 41, 58, 48;     /* Almost black green */
+  --color-primary-950: 25, 35, 30;     /* Deepest green */
+
+  /* Deep Herbal Green */
+  --color-secondary-50: 243, 249, 244;  /* Very light sage */
+  --color-secondary-100: 224, 240, 226; /* Soft pale green */
+  --color-secondary-200: 199, 225, 203; /* Muted herbal green */
+  --color-secondary-300: 166, 201, 174; /* Subtle moss green */
+  --color-secondary-400: 135, 175, 146; /* Sage with a touch of olive */
+  --color-secondary-500: 109, 147, 120; /* Aged green */
+  --color-secondary-600: 89, 122, 98;   /* Muted woodland green */
+  --color-secondary-700: 72, 100, 78;   /* Deep botanical green */
+  --color-secondary-800: 55, 77, 60;    /* Very dark rosemary */
+  --color-secondary-900: 42, 58, 46;    /* Shadowy green */
+  --color-secondary-950: 26, 35, 29;    /* Nearly black green */
+}
